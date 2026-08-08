@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SANTANTONIO Büro Optimierung - Ihr Partner für smarte Workflows</title>
     
-    <!-- Open Graph / Social Media Meta-Tags -->
-    <meta property="og:title" content="SANTANTONIO Büro Optimierung">
-    <meta property="og:description" content="Effiziente Lösungen, smarte Workflows und Dokumentenmanagement für Ihr Unternehmen.">
-    <meta property="og:type" content="website">
-
     <style>
         :root {
             --primary: #2563eb;
@@ -29,20 +24,20 @@
             line-height: 1.6;
             scroll-behavior: smooth;
         }
-        /* Header an das schwarze Logo angepasst */
         header {
-            background: #000000;
-            padding: 1rem 2.5rem;
+            background: #ffffff;
+            padding: 1.25rem 2.5rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 2px solid #1e293b;
+            border-bottom: 1px solid #e2e8f0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
         }
-        /* Logo in voller Breite und absolut ungeschnitten */
+        /* Logo jetzt erheblich größer */
         .logo-img {
-            height: 70px;
+            height: 180px; 
             width: auto;
-            max-width: 320px;
+            max-width: 600px;
             object-fit: contain;
             display: block;
         }
@@ -155,7 +150,6 @@
             margin-bottom: 1rem;
             color: var(--primary);
         }
-        /* FAQ Styling */
         .faq-item {
             background: white;
             padding: 1.5rem;
@@ -172,7 +166,6 @@
             color: var(--gray);
             font-size: 0.95rem;
         }
-        /* WhatsApp Box im Kontaktbereich */
         .whatsapp-box {
             background: #f0fdf4;
             border: 1px solid #bbf7d0;
@@ -197,7 +190,6 @@
         .whatsapp-btn:hover {
             opacity: 0.9;
         }
-        /* Sticky WhatsApp Button unten links */
         .sticky-whatsapp {
             position: fixed;
             bottom: 2rem;
@@ -216,7 +208,6 @@
         .sticky-whatsapp:hover {
             transform: scale(1.1);
         }
-        /* Scroll to Top Button */
         .scroll-top {
             position: fixed;
             bottom: 2rem;
@@ -256,11 +247,10 @@
                 padding: 2rem;
             }
             header {
-                padding: 0.75rem 1rem;
+                padding: 1rem;
             }
             .logo-img {
-                height: 50px;
-                max-width: 200px;
+                height: 120px; /* Auch auf Smartphones deutlich größer */
             }
         }
     </style>
@@ -283,7 +273,7 @@
 
     <div class="container">
         <div class="about-section">
-            <img src="frau_santantonio.jpg" alt="Frau Santantonio" class="profile-img">
+            <img src="frau_sanantonio.jpg" alt="Frau Santantonio" class="profile-img">
             <div class="about-content" style="width: 100%;">
                 <div class="target-group">Ideal für kleine Unternehmen & Selbstständige</div>
                 <h2>Persönlich für Sie da</h2>
@@ -316,7 +306,6 @@
         </div>
     </div>
 
-    <!-- FAQ-Bereich -->
     <div class="container" style="padding-top: 0;">
         <div class="section-title" style="margin-bottom: 2rem;">
             <h2>Häufig gestellte Fragen (FAQ)</h2>
@@ -339,7 +328,6 @@
         <div class="card" style="background: white;">
             <h2 style="text-align: center; margin-bottom: 1.5rem;">Kontaktieren Sie mich</h2>
             
-            <!-- WhatsApp Direkt-Box im Kontaktbereich -->
             <div class="whatsapp-box">
                 <p style="color: #166534; font-weight: 600; margin-bottom: 0.25rem;">Schnelle Frage zwischendurch?</p>
                 <p style="color: #15803d; font-size: 0.9rem; margin-bottom: 0;">Schreiben Sie mir ganz unkompliziert direkt per WhatsApp.</p>
@@ -348,7 +336,6 @@
                 </a>
             </div>
 
-            <!-- Überschrift für das Formular -->
             <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.15rem;">Kontaktformular</h3>
 
             <form action="https://formspree.io/f/mrpzegbj" method="POST">
@@ -369,19 +356,16 @@
         </div>
     </div>
 
-    <!-- Schwebender WhatsApp-Button unten links -->
     <a href="https://wa.me/4915202838579?text=Hallo%20Frau%20Santantonio,%20ich%20habe%20eine%20Frage%20zur%20Bürooptimierung." target="_blank" class="sticky-whatsapp" title="Per WhatsApp kontaktieren">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="28" height="28" alt="WhatsApp">
     </a>
 
-    <!-- Scroll-to-Top Button unten rechts -->
     <a href="#" id="scrollTopBtn" class="scroll-top" title="Nach oben">↑</a>
 
     <footer>
         <p>&copy; 2026 SANTANTONIO Büro Optimierung. | <a href="impressum.html" style="color: #94a3b8; text-decoration: underline;">Impressum</a> | <a href="datenschutz.html" style="color: #94a3b8; text-decoration: underline;">Datenschutz</a></p>
     </footer>
 
-    <!-- JavaScript für Scroll-to-Top-Button -->
     <script>
         const scrollBtn = document.getElementById('scrollTopBtn');
         window.addEventListener('scroll', () => {
@@ -396,6 +380,5 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     </script>
-
 </body>
 </html>

@@ -23,18 +23,20 @@
             color: var(--dark);
             line-height: 1.6;
         }
+        /* Sauberer, heller Header ohne schwarzen Balken */
         header {
-            background: #000000;
-            padding: 1rem 2.5rem;
+            background: #ffffff;
+            padding: 1.25rem 2.5rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 2px solid #1e293b;
+            border-bottom: 1px solid #e2e8f0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
         }
         .logo-img {
-            height: 70px;
+            height: 120px; 
             width: auto;
-            max-width: 320px;
+            max-width: 400px;
             object-fit: contain;
             display: block;
         }
@@ -42,10 +44,11 @@
             display: inline-block;
             background-color: var(--primary);
             color: white;
-            padding: 0.75rem 1.5rem;
+            padding: 0.5rem 1rem;
             border-radius: 0.5rem;
             text-decoration: none;
             font-weight: 600;
+            font-size: 0.9rem;
             transition: opacity 0.2s;
         }
         .btn:hover {
@@ -53,42 +56,33 @@
         }
         .container {
             max-width: 800px;
-            margin: 3rem auto;
-            padding: 0 2rem;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
         }
-        .content-card {
+        .card {
             background: white;
-            padding: 3rem;
+            padding: 2.5rem;
             border-radius: 0.75rem;
             box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
         }
-        h1 {
+        .card h1 {
+            font-size: clamp(1.5rem, 4vw, 2.2rem);
             color: var(--primary);
             margin-bottom: 1.5rem;
-            font-size: 2rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.75rem;
+            word-wrap: break-word;
         }
-        h2 {
-            font-size: 1.2rem;
-            margin-top: 2rem;
+        .card h2 {
+            font-size: 1.25rem;
+            color: var(--dark);
+            margin-top: 1.5rem;
             margin-bottom: 0.5rem;
-            color: var(--dark);
         }
-        p {
-            margin-bottom: 1rem;
+        .card p {
             color: var(--gray);
-        }
-        strong {
-            color: var(--dark);
-        }
-        .back-link {
-            display: inline-block;
-            margin-top: 2rem;
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .back-link:hover {
-            text-decoration: underline;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
         }
         footer {
             background: var(--dark);
@@ -100,13 +94,12 @@
         }
         @media (max-width: 768px) {
             header {
-                padding: 0.75rem 1rem;
+                padding: 1rem;
             }
             .logo-img {
-                height: 50px;
-                max-width: 200px;
+                height: 90px;
             }
-            .content-card {
+            .card {
                 padding: 1.5rem;
             }
         }
@@ -115,54 +108,52 @@
 <body>
 
     <header>
-        <a href="index.html">
+        <a href="./index.html">
             <img src="Logo.jpg" alt="SANTANTONIO Büro Optimierung" class="logo-img">
         </a>
-        <a href="index.html" class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Zur Startseite</a>
+        <a href="./index.html" class="btn">Zurück zur Startseite</a>
     </header>
 
     <div class="container">
-        <div class="content-card">
+        <div class="card">
             <h1>Impressum</h1>
             
-            <h2>Angaben gemäß § 5 TMG</h2>
+            <h2>Angaben gemäß § 5 DDG</h2>
             <p>
                 <strong>SANTANTONIO Büro Optimierung</strong><br>
-                Inhaberin: Laura Santantonio<br>
-                Frenser Straße 19<br>
-                50126 Bergheim
+                Christoph Ulrich<br>
+                [Deine Straße und Hausnummer]<br>
+                [Deine PLZ und Ort]
             </p>
 
             <h2>Kontakt</h2>
             <p>
-                E-Mail: <a href="mailto:Bueroptimierung@gmail.com" style="color: var(--primary); text-decoration: none;">Bueroptimierung@gmail.com</a><br>
-                Telefon / WhatsApp: <a href="https://wa.me/4915202838579" target="_blank" style="color: var(--primary); text-decoration: none;">01520 2838579</a>
-            </p>
-
-            <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
-            <p>
-                Laura Santantonio<br>
-                Frenser Straße 19<br>
-                50126 Bergheim
+                Telefon: [Deine Telefonnummer]<br>
+                E-Mail: Bueroptimierung@gmail.com
             </p>
 
             <h2>Umsatzsteuer-ID</h2>
             <p>
-                Gemäß § 19 UStG wird keine Umsatzsteuer berechnet (Kleinunternehmerregelung).
+                Kleinunternehmer gemäß § 19 UStG erheben keine Umsatzsteuer und weisen diese daher auch nicht aus.<br>
+                [Falls vorhanden: Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE ...]
             </p>
 
-            <h2>Streitschlichtung</h2>
+            <h2>EU-Streitschlichtung</h2>
             <p>
-                Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" style="color: var(--primary);">https://ec.europa.eu/consumers/odr/</a>.<br>
-                Unsere E-Mail-Adresse finden Sie oben im Impressum. Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+                Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: 
+                <a href="https://ec.europa.eu/consumers/odr/" target="_blank" style="color: var(--primary);">https://ec.europa.eu/consumers/odr/</a>.<br>
+                Unsere E-Mail-Adresse finden Sie oben im Impressum.
             </p>
 
-            <a href="index.html" class="back-link">&larr; Zurück zur Startseite</a>
+            <h2>Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
+            <p>
+                Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+            </p>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 SANTANTONIO Büro Optimierung. | <a href="impressum.html" style="color: #94a3b8; text-decoration: underline;">Impressum</a> | <a href="datenschutz.html" style="color: #94a3b8; text-decoration: underline;">Datenschutz</a></p>
+        <p>&copy; 2026 SANTANTONIO Büro Optimierung. | <a href="./impressum.html" style="color: #94a3b8; text-decoration: underline;">Impressum</a> | <a href="./datenschutz.html" style="color: #94a3b8; text-decoration: underline;">Datenschutz</a></p>
     </footer>
 
 </body>

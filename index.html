@@ -3,386 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SANTANTONIO Büro Optimierung - Ihr Partner für smarte Workflows</title>
-    
-    <!-- Open Graph / Social Media Meta-Tags -->
-    <meta property="og:title" content="SANTANTONIO Büro Optimierung">
-    <meta property="og:description" content="Effiziente Lösungen, smarte Workflows und Dokumentenmanagement für Ihr Unternehmen.">
-    <meta property="og:type" content="website">
-
+    <title>Santantonio Büro Optimierung | Effiziente Abläufe</title>
     <style>
-        :root {
-            --primary: #2563eb;
-            --dark: #1e293b;
-            --light: #f8fafc;
-            --gray: #64748b;
-        }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        }
-        body {
-            background-color: var(--light);
-            color: var(--dark);
-            line-height: 1.6;
-            scroll-behavior: smooth;
-        }
-        header {
-            background: white;
-            padding: 0.75rem 2rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo-img {
-            height: 120px;
-            width: auto;
-            display: block;
-        }
-        .hero {
-            padding: 4rem 2rem;
-            text-align: center;
-            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-            color: white;
-        }
-        .hero-badge {
-            display: inline-block;
-            background-color: rgba(37, 99, 235, 0.2);
-            color: #60a5fa;
-            border: 1px solid rgba(96, 165, 250, 0.3);
-            padding: 0.35rem 1rem;
-            border-radius: 50px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: 1rem;
-        }
-        .hero h1 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: var(--dark);
-            background-color: white;
-            display: inline-block;
-            padding: 0.5rem 1.5rem;
-            border-radius: 0.5rem;
-        }
-        .hero p {
-            font-size: 1.1rem;
-            color: #94a3b8;
-            max-width: 600px;
-            margin: 0 auto 2rem auto;
-        }
-        .btn {
-            display: inline-block;
-            background-color: var(--primary);
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.5rem;
-            text-decoration: none;
-            font-weight: 600;
-            transition: opacity 0.2s;
-        }
-        .btn:hover {
-            opacity: 0.9;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-        .section-title {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        .about-section {
-            background-color: white;
-            display: flex;
-            align-items: center;
-            gap: 3rem;
-            padding: 4rem;
-            border-radius: 0.75rem;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
-            margin-top: -2rem;
-            position: relative;
-            z-index: 1;
-        }
-        .about-img {
-            max-width: 300px;
-            border-radius: 0.75rem;
-            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
-        }
-        .about-content h2 {
-            color: var(--primary);
-            margin-bottom: 1rem;
-        }
-        .about-content p {
-            margin-bottom: 1rem;
-        }
-        .target-group {
-            display: inline-block;
-            background: #eff6ff;
-            color: var(--primary);
-            padding: 0.4rem 0.8rem;
-            border-radius: 0.4rem;
-            font-size: 0.9rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-        .card {
-            background: white;
-            padding: 2rem;
-            border-radius: 0.75rem;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
-        }
-        .card h3 {
-            margin-bottom: 1rem;
-            color: var(--primary);
-        }
-        /* FAQ Styling */
-        .faq-item {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 0.75rem;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
-            margin-bottom: 1rem;
-        }
-        .faq-item h3 {
-            color: var(--dark);
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-        }
-        .faq-item p {
-            color: var(--gray);
-            font-size: 0.95rem;
-        }
-        /* WhatsApp Box im Kontaktbereich */
-        .whatsapp-box {
-            background: #f0fdf4;
-            border: 1px solid #bbf7d0;
-            padding: 1.5rem;
-            border-radius: 0.75rem;
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-        .whatsapp-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background-color: #25d366;
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.5rem;
-            text-decoration: none;
-            font-weight: 600;
-            margin-top: 0.75rem;
-            transition: opacity 0.2s;
-        }
-        .whatsapp-btn:hover {
-            opacity: 0.9;
-        }
-        /* Sticky WhatsApp Button unten links */
-        .sticky-whatsapp {
-            position: fixed;
-            bottom: 2rem;
-            left: 2rem;
-            background-color: #25d366;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-            z-index: 1000;
-            transition: transform 0.2s;
-        }
-        .sticky-whatsapp:hover {
-            transform: scale(1.1);
-        }
-        /* Scroll to Top Button */
-        .scroll-top {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            background-color: var(--primary);
-            color: white;
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.3s;
-            z-index: 1000;
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-        .scroll-top.visible {
-            opacity: 1;
-            pointer-events: auto;
-        }
-        footer {
-            background: var(--dark);
-            color: #94a3b8;
-            text-align: center;
-            padding: 2rem;
-            font-size: 0.9rem;
-        }
-        @media (max-width: 768px) {
-            .about-section {
-                flex-direction: column;
-                text-align: center;
-                padding: 2rem;
-            }
-            .about-img {
-                max-width: 200px;
-                margin: 0 auto;
-            }
-        }
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
+        header { text-align: center; margin-bottom: 30px; }
+        .logo { max-width: 200px; height: auto; margin-bottom: 15px; }
+        main { background: #ffffff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 30px; }
+        h1, h2, h3 { color: #2c3e50; }
+        .hero { text-align: center; margin-bottom: 30px; }
+        .services { margin: 30px 0; }
+        .service-item { background: #fdfdfd; border-left: 4px solid #3498db; padding: 15px; margin-bottom: 15px; border-radius: 0 4px 4px 0; }
+        .geschaeftsfuehrerin-section { text-align: center; margin: 40px 0; }
+        .geschaeftsfuehrerin-img { max-width: 220px; height: auto; border-radius: 8px; margin-top: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+        .form-group input, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { background-color: #3498db; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; width: 100%; }
+        footer { text-align: center; font-size: 0.9em; color: #777; margin-top: 40px; }
     </style>
 </head>
 <body>
 
     <header>
-        <img src="Logo.jpg" alt="SANTANTONIO Büro Optimierung" class="logo-img">
-        <a href="#kontakt" onclick="document.getElementById('kontakt').scrollIntoView({behavior: 'smooth'}); return false;" class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Kontakt</a>
+        <!-- Logo -->
+        <img src="https://i.ibb.co/b3S16hH/logo.png" alt="Logo" class="logo" onerror="this.style.display='none'">
     </header>
 
-    <section class="hero">
-        <div class="hero-badge">Ihr Partner für smarte Workflows</div>
-        <h1>Effiziente Lösungen für Ihr Unternehmen</h1>
-        <p>Ich optimiere Ihre Abläufe, schaffe klare Strukturen und sorge für einen professionellen Auftritt.</p>
-        <a href="#kontakt" onclick="document.getElementById('kontakt').scrollIntoView({behavior: 'smooth'}); return false;" class="btn">Jetzt unverbindlich anfragen</a>
-    </section>
+    <main>
+        <section class="hero">
+            <h1>Santantonio Büro Optimierung</h1>
+            <p><strong>Ihre professionelle Unterstützung für effiziente Abläufe und strukturierte Prozesse im Büro.</strong></p>
+        </section>
 
-    <div class="container">
-        <div class="about-section">
-            <img src="frau_sanantonio.jpg" alt="FRAU SANANTONIO" class="about-img">
-            <div class="about-content">
-                <div class="target-group">Ideal für kleine Unternehmen & Selbstständige</div>
-                <h2>Persönlich für Sie da</h2>
-                <p><strong>FRAU SANANTONIO</strong></p>
-                <p>Als frisches und agiles Einzelunternehmen stehe ich persönlich für smarte Workflows und effiziente Bürostrukturen. Mit frischem Blick und modernsten Methoden begleite ich Sie direkt – digital, unkompliziert und passgenau auf Ihren Workflow abgestimmt.</p>
-                <p>Direktkontakt per E-Mail: <a href="mailto:Bueroptimierung@gmail.com" style="color: var(--primary); text-decoration: none; font-weight: 600;">Bueroptimierung@gmail.com</a></p>
-                <p><strong>Persönlich, kompetent und lösungsorientiert.</strong></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="section-title">
+        <section class="services">
             <h2>Unsere Leistungen</h2>
-        </div>
-        
-        <div class="grid">
-            <div class="card">
-                <h3>01. Analyse & Beratung</h3>
-                <p>Ich analysiere Ihren Ist-Zustand, erkenne Optimierungspotenziale und erarbeite einen klaren Fahrplan.</p>
+            <div class="service-item">
+                <h3>Ablauf- und Prozessoptimierung</h3>
+                <p>Wir analysieren Ihre Büroprozesse und schaffen schlanke, zeitsparende Arbeitsabläufe.</p>
             </div>
-            <div class="card">
-                <h3>02. Struktur & Umsetzung</h3>
-                <p>Ich setze Maßnahmen direkt um, etabliere effiziente Workflows und entlaste Ihren Alltag nachhaltig.</p>
+            <div class="service-item">
+                <h3>Digitale Dokumentenablage</h3>
+                <p>Schluss mit dem Zettelchaos: Wir etablieren eine übersichtliche, digitale Struktur für Ihre Daten.</p>
             </div>
-            <div class="card">
-                <h3>03. Dokumentenmanagement</h3>
-                <p>Ich digitalisiere und strukturiere Ihre Ablagen, damit Sie Dokumente blitzschnell wiederfinden und papierlos arbeiten.</p>
+            <div class="service-item">
+                <h3>Büro-Management & Support</h3>
+                <p>Zuverlässige Unterstützung im operativen Tagesgeschäft.</p>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <!-- FAQ-Bereich -->
-    <div class="container" style="padding-top: 0;">
-        <div class="section-title" style="margin-bottom: 2rem;">
-            <h2>Häufig gestellte Fragen (FAQ)</h2>
-        </div>
-        <div class="faq-item">
-            <h3>Wie läuft eine Zusammenarbeit ab?</h3>
-            <p>Wir besprechen ganz unkompliziert Ihren aktuellen Bedarf. Danach analysiere ich Ihre Prozesse und setze die passenden digitalen Workflows und Strukturen für Sie um.</p>
-        </div>
-        <div class="faq-item">
-            <h3>Für wen sind die Angebote geeignet?</h3>
-            <p>Meine Leistungen richten sich gezielt an kleine Unternehmen, Selbstständige und Büros, die ihre internen Abläufe verschlanken und digitaler gestalten möchten.</p>
-        </div>
-        <div class="faq-item">
-            <h3>Wie kann ich Kontakt aufnehmen?</h3>
-            <p>Nutzen Sie einfach das Kontaktformular, schreiben Sie mir eine E-Mail oder kontaktieren Sie mich direkt über WhatsApp.</p>
-        </div>
-    </div>
+        <section class="geschaeftsfuehrerin-section">
+            <h2>Ihre Ansprechpartnerin</h2>
+            <p><strong>Laura Santantonio</strong></p>
+        </section>
 
-    <div id="kontakt" class="container" style="padding-top: 0;">
-        <div class="card" style="background: white;">
-            <h2 style="text-align: center; margin-bottom: 1.5rem;">Kontaktieren Sie mich</h2>
-            
-            <!-- WhatsApp Direkt-Box im Kontaktbereich -->
-            <div class="whatsapp-box">
-                <p style="color: #166534; font-weight: 600; margin-bottom: 0.25rem;">Schnelle Frage zwischendurch?</p>
-                <p style="color: #15803d; font-size: 0.9rem; margin-bottom: 0;">Schreiben Sie mir ganz unkompliziert direkt per WhatsApp.</p>
-                <a href="https://wa.me/4915202838579?text=Hallo%20Frau%20Santantonio,%20ich%20interessiere%20mich%20für%20Bürooptimierung." target="_blank" class="whatsapp-btn">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="20" height="20" alt="WhatsApp"> Per WhatsApp schreiben
-                </a>
-            </div>
-
-            <!-- Überschrift für das Formular -->
-            <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.15rem;">Kontaktformular</h3>
-
-            <form action="https://formspree.io/f/mrpzegbj" method="POST">
-                <div style="margin-bottom: 1rem;">
-                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Name</label>
-                    <input type="text" name="name" required style="width: 100%; padding: 0.75rem; border: 1px solid #cbd5e1; border-radius: 0.5rem; outline: none;">
-                </div>
-                <div style="margin-bottom: 1rem;">
-                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">E-Mail</label>
-                    <input type="email" name="email" required style="width: 100%; padding: 0.75rem; border: 1px solid #cbd5e1; border-radius: 0.5rem; outline: none;">
-                </div>
-                <div style="margin-bottom: 1.5rem;">
-                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Nachricht</label>
-                    <textarea name="message" required rows="4" style="width: 100%; padding: 0.75rem; border: 1px solid #cbd5e1; border-radius: 0.5rem; outline: none; resize: vertical;"></textarea>
-                </div>
-                <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer; text-align: center;">Nachricht absenden</button>
+        <section class="contact-form">
+            <h2>Kontaktieren Sie uns</h2>
+            <form action="https://formspree.io/f/IHRE-FORMESPREE-ID" method="POST">
+                <div class="form-group"><label>Ihr Name:</label><input type="text" name="name" required></div>
+                <div class="form-group"><label>E-Mail:</label><input type="email" name="email" required></div>
+                <div class="form-group"><label>Nachricht:</label><textarea name="message" rows="5" required></textarea></div>
+                <button type="submit">Nachricht senden</button>
             </form>
-        </div>
-    </div>
-
-    <!-- Schwebender WhatsApp-Button unten links -->
-    <a href="https://wa.me/4915202838579?text=Hallo%20Frau%20Santantonio,%20ich%20habe%20eine%20Frage%20zur%20Bürooptimierung." target="_blank" class="sticky-whatsapp" title="Per WhatsApp kontaktieren">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="28" height="28" alt="WhatsApp">
-    </a>
-
-    <!-- Scroll-to-Top Button unten rechts -->
-    <a href="#" id="scrollTopBtn" class="scroll-top" title="Nach oben">↑</a>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2026 SANTANTONIO Büro Optimierung. | <a href="impressum.html" style="color: #94a3b8; text-decoration: underline;">Impressum</a> | <a href="datenschutz.html" style="color: #94a3b8; text-decoration: underline;">Datenschutz</a></p>
+        <p>&copy; 2026 Santantonio Büro Optimierung.</p>
     </footer>
-"
-    <!-- JavaScript für Scroll-to-Top-Button -->
-    <script>
-        const scrollBtn = document.getElementById('scrollTopBtn');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-                scrollBtn.classList.add('visible');
-            } else {
-                scrollBtn.classList.remove('visible');
-            }
-        });
-        scrollBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    </script>
 
 </body>
 </html>

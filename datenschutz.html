@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datenschutzerklärung - SANTANTONIO Büro Optimierung</title>
+    <title>Datenschutz - SANTANTONIO Büro Optimierung</title>
+    
     <style>
         :root {
             --primary: #2563eb;
@@ -23,46 +24,20 @@
             line-height: 1.6;
         }
         header {
-            background: white;
-            padding: 0.75rem 2rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            background: #ffffff;
+            padding: 1.25rem 2.5rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border-bottom: 1px solid #e2e8f0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
         }
         .logo-img {
-            height: 120px;
+            height: 120px; 
             width: auto;
+            max-width: 400px;
+            object-fit: contain;
             display: block;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-        .card {
-            background: white;
-            padding: 3rem;
-            border-radius: 0.75rem;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
-        }
-        h1 {
-            color: var(--primary);
-            margin-bottom: 2rem;
-            font-size: 2rem;
-        }
-        h2 {
-            color: var(--dark);
-            font-size: 1.25rem;
-            margin-top: 1.5rem;
-            margin-bottom: 0.5rem;
-        }
-        p, ul {
-            margin-bottom: 1rem;
-            color: var(--gray);
-        }
-        ul {
-            padding-left: 1.5rem;
         }
         .btn {
             display: inline-block;
@@ -71,8 +46,45 @@
             padding: 0.5rem 1rem;
             border-radius: 0.5rem;
             text-decoration: none;
-            font-size: 0.9rem;
             font-weight: 600;
+            font-size: 0.9rem;
+            transition: opacity 0.2s;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+        .card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+        }
+        .card h1 {
+            font-size: clamp(1.5rem, 4vw, 2.2rem);
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.75rem;
+            word-wrap: break-word;
+        }
+        .card h2 {
+            font-size: 1.25rem;
+            color: var(--dark);
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .card p, .card ul {
+            color: var(--gray);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+        .card ul {
+            padding-left: 1.5rem;
         }
         footer {
             background: var(--dark);
@@ -82,55 +94,84 @@
             font-size: 0.9rem;
             margin-top: 4rem;
         }
+        @media (max-width: 768px) {
+            header {
+                padding: 1rem;
+            }
+            .logo-img {
+                height: 90px;
+            }
+            .card {
+                padding: 1.5rem;
+            }
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <img src="Logo.jpg" alt="SANTANTONIO Büro Optimierung" class="logo-img">
-        <a href="index.html" class="btn">Zurück zur Startseite</a>
+        <a href="./index.html">
+            <img src="Logo.jpg" alt="SANTANTONIO Büro Optimierung" class="logo-img">
+        </a>
+        <a href="./index.html" class="btn">Zurück zur Startseite</a>
     </header>
 
     <div class="container">
         <div class="card">
             <h1>Datenschutzerklärung</h1>
-
+            
             <h2>1. Datenschutz auf einen Blick</h2>
-            <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
+            <p><strong>Allgemeine Hinweise</strong><br>
+            Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.</p>
 
-            <h2>2. Verantwortliche Stelle</h2>
-            <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
-            <p>
-                Laura Santantonio<br>
-                Frenser Straße 19, 50127 Bergheim<br>
-                E-Mail: <a href="mailto:buerooptimierung@gmail.com" style="color: var(--primary);">buerooptimierung@gmail.com</a>
-            </p>
+            <h2>2. Hosting und Content Delivery Networks (CDN)</h2>
+            <p><strong>Externes Hosting</strong><br>
+            Diese Website wird extern gehostet. Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert. Hierbei kann es sich v.a. um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Websitezugriffe und sonstige Daten, die über eine Website generiert werden, handeln.<br>
+            Das externe Hosting erfolgt zum Zwecke der Vertragserfüllung gegenüber unseren potenziellen und bestehenden Kunden (Art. 6 Abs. 1 lit. b DSGVO) und im Interesse einer sicheren, schnellen und effizienten Bereitstellung unseres Online-Angebots durch einen professionellen Anbieter (Art. 6 Abs. 1 lit. f DSGVO).</p>
 
-            <h2>3. Hosting</h2>
-            <p>Wir hosten die Inhalte unserer Website bei folgendem Anbieter:</p>
-            <p><em>[Bitte hier später den Hosting-Anbieter eintragen, z.B. Netlify, GitHub Pages, IONOS oder Strato]</em></p>
+            <h2>3. Allgemeine Hinweise und Pflichtinformationen</h2>
+            <p><strong>Datenschutz</strong><br>
+            Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p>
 
-            <h2>4. Allgemeine Hinweise und Pflichtinformationen</h2>
-            <h3>SSL- bzw. TLS-Verschlüsselung</h3>
-            <p>Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.</p>
+            <p><strong>Hinweis zur verantwortlichen Stelle</strong><br>
+            Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:<br>
+            SANTANTONIO Büro Optimierung<br>
+            Inhaber: Laura Santantonio<br>
+            E-Mail: Bueroptimierung@gmail.com</p>
 
-            <h3>Rechte der betroffenen Person</h3>
-            <p>Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden.</p>
+            <p><strong>Speicherdauer</strong><br>
+            Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen Daten haben.</p>
 
-            <h3>Beschwerderecht bei der zuständigen Aufsichtsbehörde</h3>
-            <p>Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde zu. Das Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.</p>
+            <p><strong>Widerruf Ihrer Einwilligung zur Datenverarbeitung</strong><br>
+            Viele Vorgänge der Datenverarbeitung sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.</p>
 
-            <h2>5. Datenerfassung auf dieser Website</h2>
-            <h3>Kontaktformular</h3>
-            <p>Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
+            <p><strong>Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie gegen Direktwerbung (Art. 21 DSGVO)</strong><br>
+            WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN...</p>
 
-            <h3>Formspree</h3>
-            <p>Für den Versand unseres Kontaktformulars nutzen wir den Dienst „Formspree“. Anbieter ist Formspree, Inc., 555 Bryant St #num 353, Palo Alto, CA 94301, USA. Wenn Sie Daten über das Formular absenden (z. B. Name und E-Mail), werden diese an Server von Formspree in den USA übertragen. Details zur Datenverarbeitung finden Sie in der Datenschutzerklärung von Formspree: <a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener noreferrer" style="color: var(--primary);">https://formspree.io/legal/privacy-policy</a>.</p>
+            <p><strong>Beschwerderecht bei der zuständigen Aufsichtsbehörde</strong><br>
+            Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes zu.</p>
+
+            <p><strong>Recht auf Datenübertragbarkeit</strong><br>
+            Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen.</p>
+
+            <p><strong>SSL- bzw. TLS-Verschlüsselung</strong><br>
+            Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von "http://" auf "https://" wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.</p>
+
+            <h2>4. Datenerfassung auf dieser Website</h2>
+            
+            <p><strong>Server-Log-Dateien</strong><br>
+            Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind: Browsertyp und Browserversion, verwendetes Betriebssystem, Referrer URL, Hostname des zugreifenden Rechners, Uhrzeit der Serveranfrage und IP-Adresse. Eine Zusammenlegung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.</p>
+
+            <p><strong>Kontaktformular</strong><br>
+            Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
+
+            <h2>5. Ihre Rechte auf Auskunft, Löschung und Berichtigung</h2>
+            <p>Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten.</p>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 SANTANTONIO Büro Optimierung. | <a href="impressum.html" style="color: #94a3b8; text-decoration: underline;">Impressum</a> | <a href="datenschutz.html" style="color: #94a3b8; text-decoration: underline;">Datenschutz</a></p>
+        <p>&copy; 2026 SANTANTONIO Büro Optimierung. | <a href="./impressum.html" style="color: #94a3b8; text-decoration: underline;">Impressum</a> | <a href="./datenschutz.html" style="color: #94a3b8; text-decoration: underline;">Datenschutz</a></p>
     </footer>
 
 </body>
